@@ -1,10 +1,10 @@
-import { IsEmail, IsStrongPassword, MinLength } from 'class-validator'
+import { IsEmail, IsString, IsStrongPassword, MinLength } from 'class-validator'
 export class CreateUserRequest {
     //@IsEmail()
-    @MinLength(1)
+    @IsString()
     email: string;
     
     //@IsStrongPassword()
-    @MinLength(1)
+    @IsString()
     password: string;
 }
