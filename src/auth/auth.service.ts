@@ -30,7 +30,7 @@ export class AuthService {
             expires
         });
 
-        return { tokenPayload };
+        return { token };
     }
     
     async verifyUser(email: string, password: string) {
